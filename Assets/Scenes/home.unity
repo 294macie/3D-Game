@@ -2846,7 +2846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4379514552596925124, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 3.54
       objectReference: {fileID: 0}
     - target: {fileID: 4379514552596925124, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2891,7 +2891,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5583055904490426659, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520618944}
+    - targetCorrespondingSourceObject: {fileID: 5583055904490426659, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520618950}
+    - targetCorrespondingSourceObject: {fileID: 5583055904490426659, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520618949}
   m_SourcePrefab: {fileID: 100100000, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
 --- !u!1 &1364804289
 GameObject:
@@ -3438,6 +3447,92 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472378775}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1520618943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5583055904490426659, guid: 84b3186e35358474db2db7ef99bc837c, type: 3}
+  m_PrefabInstance: {fileID: 1362567189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1520618944
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520618943}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1520618949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520618943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80bcdf2c39a33dc47aeb4b7e8c809c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceFaces:
+  - value: 1
+    localDirection: {x: 0, y: 1, z: 0}
+  - value: 2
+    localDirection: {x: 0, y: -1, z: 0}
+  - value: 3
+    localDirection: {x: 1, y: 0, z: 0}
+  - value: 4
+    localDirection: {x: -1, y: 0, z: 0}
+  - value: 5
+    localDirection: {x: 0, y: 0, z: 1}
+  - value: 6
+    localDirection: {x: 0, y: 0, z: -1}
+--- !u!114 &1520618950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520618943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421d1ece971a76a4e8ed35cbf2f4f22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 5
+  torqueForce: 500
+  spawnHeight: {x: 0, y: 10, z: 0}
+  player: {fileID: 0}
+  diceFaces:
+  - value: 1
+    localDirection: {x: 0, y: 1, z: 0}
+  - value: 2
+    localDirection: {x: 0, y: -1, z: 0}
+  - value: 3
+    localDirection: {x: 1, y: 0, z: 0}
+  - value: 4
+    localDirection: {x: -1, y: 0, z: 0}
+  - value: 5
+    localDirection: {x: 0, y: 0, z: 1}
+  - value: 6
+    localDirection: {x: 0, y: 0, z: -1}
 --- !u!1 &1521729506
 GameObject:
   m_ObjectHideFlags: 0
